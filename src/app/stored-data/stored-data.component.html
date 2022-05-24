@@ -1,0 +1,11 @@
+<ol class="list-group list-group-numbered">
+    <li *ngFor="let u of users; index as i" class="list-group-item bg-light">
+        <br>
+        <span >  User Name: {{u.firstName+" "+u.lastName | uppercase}}</span>
+        <br>
+        <span > User Age: {{u.birthdate| agePipe}}</span>
+        <br>
+        <span></span>
+    
+    </li>
+</ol>
